@@ -1,0 +1,153 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+
+body{
+    background: linear-gradient(239.44deg, #000000 18.53%, rgba(0, 0, 0, 0.9) 79.46%);
+    backdrop-filter: blur(4px);
+    background-repeat:round;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+header .container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+h1, h2{
+    font-weight: 700;
+}
+
+header nav li{
+    display: inline;
+    margin: 16px;
+    font-size: 20px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+header nav li a:hover{
+    font-weight: 700;
+}
+
+#home{
+    padding: 250px 0 320px 0;
+}
+
+#home h2{
+    font-size: 60px;
+}
+
+#home p{
+    font-size: 30px;
+    line-height: 35px;
+    color: greenyellow;
+}
+
+#about {
+    padding: 110px 0 0 0;
+}
+
+#about h2{
+    font-size: 30px;
+}
+
+#about p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#about img{
+    width: 1280px;
+    height: 606px;
+}
+
+#contact{
+    padding: 110px 0 0 0;
+}
+
+#contact h2{
+        font-size: 30px; 
+    }
+
+#contact p{
+        font-size: 20px;
+        line-height: 30px;
+}
+
+#contact img{
+    width: 30px;
+    margin-right: 12px;
+    }
+
+#contact li{
+    display: inline;
+    align-items: center;
+    justify-items: center;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 1280px;
+    margin-bottom: 8px;
+    padding: 8px;
+    color: #000000;
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form button{
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(143, 211, 40);
+    font-weight: 700;
+}
+
+.social h3{
+    text-align: center;
+    color: greenyellow;
+    padding: 0 0 16px 0;
+}
+
+.social{
+    text-align: center;
+}
+
+footer{
+    padding: 16px 0;
+    text-align: center;
+    color: greenyellow;
+}
