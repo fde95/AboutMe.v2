@@ -259,7 +259,7 @@ footer{
     }
 
     header h1{
-        font-size: 50px;
+        font-size: 2em;
     }
     
     header .container{
@@ -272,9 +272,25 @@ footer{
     }
     
     header nav li{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     /*Fim Ajustes Header*/
+
+    /*Inicio Criação Home*/
+    #home{
+        padding: 150px 0 320px 0;
+    }
+
+    #home h2{
+        font-size: 3em;
+    }
+
+    #home p{
+        font-size: 2em;
+        line-height: 20px;
+        color: greenyellow;
+    }
+    /*Fim Criação Home*/
 
     /*Inicio Ajustes AboutMe*/
     #about {
@@ -282,7 +298,8 @@ footer{
     }
     
     #about h2{
-        font-size: 2.5em;
+        font-size: 2em;
+        padding-bottom: 10px;
     }
     
     #about p{
@@ -346,13 +363,13 @@ footer{
     }
 
     .social{
-        font-size: 1em;
+        font-size: .9em;
     }
     /*Fim Ajustes Contato*/
 
     /*Inicio Ajustes Footer*/
     footer {
-        font-size: .9em;
+        font-size: .8em;
     }
     /*Fim Ajustes Footer*/
 
@@ -369,7 +386,7 @@ footer{
     
     /*Inicio Ajustes AboutMe*/
     #about {
-        padding: 110px 0 0 0;
+        padding: 220px 0 0 0;
     }
     
     #about h2{
