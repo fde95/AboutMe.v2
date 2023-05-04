@@ -13,10 +13,11 @@ body{
 
 .container{
     max-width: 1280px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
+/*Inicio Criação Header*/
 header{
     padding: 16px 0;
     position: sticky;
@@ -52,7 +53,9 @@ header nav li a{
 header nav li a:hover{
     font-weight: 700;
 }
+/*Fim Criação Header*/
 
+/*Inicio Criação Home*/
 #home{
     padding: 250px 0 320px 0;
 }
@@ -66,9 +69,11 @@ header nav li a:hover{
     line-height: 35px;
     color: greenyellow;
 }
+/*Fim Criação Home*/
 
+/*Inicio Criação About*/
 #about {
-    padding: 110px 0 0 0;
+    padding: 200px 0 0 0;
 }
 
 #about h2{
@@ -78,13 +83,98 @@ header nav li a:hover{
 #about p{
     font-size: 20px;
     line-height: 30px;
+    text-align: justify;
 }
 
 #about img{
-    width: 1280px;
-    height: 606px;
+    width: 100%;
+    border-radius: 20px;
+}
+/*Fim Criação About*/
+
+/*Inicio Criação Projects*/
+.background{
+    background-color:greenyellow;;
 }
 
+.products div{
+    background-color: #313131;
+    padding: 10px 0;
+    margin: -8px 0;
+}
+
+#projects {
+    margin-top: -200PX;
+    padding: 300px 0 ;
+}
+
+#projects h2{
+    font-size: 2.2em;
+    padding-bottom: 30px;
+    color: #000000;;
+}
+
+#projects article{
+    font-size: 1em;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.20);
+}
+
+article h3{
+    padding: 15px 0 5px 10px;
+}
+
+article strong{
+    font-weight: 200;
+    padding-left:  10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 24.75%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.product img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.product a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.align{
+    padding: 20px 0 0 10px;
+}
+
+.align:hover{
+    text-decoration: underline;
+}
+
+.product a button{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 8px
+}
+
+#projects article button{
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    background-color: #000000;
+}
+
+#projects article button:hover{
+    background-color:  #141414;
+}
+/*Fim Criação Projects*/
+
+/*Inicio Criação Contact*/
 #contact{
     padding: 110px 0 0 0;
 }
@@ -113,7 +203,7 @@ form input,
 form textarea,
 form button{
     display: block;
-    width: 1280px;
+    width: 100%;
     margin-bottom: 8px;
     padding: 8px;
     color: #000000;
@@ -129,6 +219,9 @@ form button{
     color: black;
     border: none;
     cursor: pointer;
+    width: 101.8%;
+    border-radius: 0 0 10px 10px;
+    font-size: 1em;
 }
 
 form button:hover{
@@ -145,9 +238,271 @@ form button:hover{
 .social{
     text-align: center;
 }
+/*Fim Criação Contact*/
 
 footer{
     padding: 16px 0;
     text-align: center;
     color: greenyellow;
 }
+
+
+/*Inicio Dimensionamento em Celular*/
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 90%;
+    }
+    
+    /*Inicio Ajustes Header*/
+    html{
+        overflow-x:hidden;
+    }
+
+    header h1{
+        font-size: 50px;
+    }
+    
+    header .container{
+        display:block;
+        text-align: center;
+    }
+    
+    h1, h2{
+        font-weight: 700;
+    }
+    
+    header nav li{
+        font-size: 1.2em;
+    }
+    /*Fim Ajustes Header*/
+
+    /*Inicio Ajustes AboutMe*/
+    #about {
+        padding: 110px 0 0 0;
+    }
+    
+    #about h2{
+        font-size: 2.5em;
+    }
+    
+    #about p{
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    #about img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    /*Fim Ajustes AboutMe*/
+
+    /*Inicio Criação Projects*/
+    #projects {
+        margin-top: -100PX;
+        padding: 200px 0 100px 0;
+    }
+
+    #projects article{
+        margin-bottom: 30px;
+    }
+
+    .product img{
+        max-width: 100%;
+    }
+
+    .products{
+        display: block;
+    }
+
+    .product a{
+        text-decoration: none;
+        font-size: 1em;
+        }
+    /*Fim Criação Projects*/
+
+    /*Inicio Ajustes Contato*/
+    form input,
+    form textarea,
+    form button{
+        display: block;
+        width: 95%;
+        margin-bottom: 8px;
+    }
+
+    form textarea{
+        resize: none;
+        height: 200px;
+    }
+
+    form button{
+        background-color: greenyellow;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-weight:bolder;
+        width: 99%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .social{
+        font-size: 1em;
+    }
+    /*Fim Ajustes Contato*/
+
+    /*Inicio Ajustes Footer*/
+    footer {
+        font-size: .9em;
+    }
+    /*Fim Ajustes Footer*/
+
+}
+/*Fim Dimensionamento em Celular*/
+
+
+
+/*Inicio Dimensionamento em Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+    .container{
+        max-width: 90%;
+    }
+    
+    /*Inicio Ajustes AboutMe*/
+    #about {
+        padding: 110px 0 0 0;
+    }
+    
+    #about h2{
+        font-size: 2.5em;
+    }
+    
+    #about p{
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    #about img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    /*Fim Ajustes AboutMe*/
+
+    /*Inicio Criação Projects*/
+.background{
+    background-color:greenyellow;;
+}
+
+.products div{
+    background-color: #313131;
+    padding: 10px 0;
+    margin: -8px 0;
+}
+
+#projects {
+    margin-top: -200PX;
+    padding: 300px 0 400px 0;
+}
+
+#projects h2{
+    font-size: 2.2em;
+    padding-bottom: 30px;
+    color: #000000;;
+}
+
+#projects article{
+    font-size: 1em;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.20);
+}
+
+article h3{
+    padding: 15px 0 5px 10px;
+}
+
+article strong{
+    font-weight: 200;
+    padding-left:  10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.product img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.product a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.align{
+    padding: 20px 0 0 10px;
+}
+
+.align:hover{
+    text-decoration: underline;
+}
+
+.product a button{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 8px
+}
+
+#projects article button{
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    background-color: #000000;
+}
+
+#projects article button:hover{
+    background-color:  #141414;
+}
+/*Fim Criação Projects*/
+
+    /*Inicio Ajustes Contato*/
+    form input,
+    form textarea,
+    form button{
+        display: block;
+        width: 98%;
+        margin-bottom: 8px;
+    }
+
+    form textarea{
+        resize: none;
+        height: 200px;
+    }
+
+    form button{
+        background-color: greenyellow;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-weight:bolder;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .social{
+        font-size: 1em;
+    }
+    /*Fim Ajustes Contato*/
+
+    /*Inicio Ajustes Footer*/
+    footer {
+        font-size: .9em;
+    }
+    /*Fim Ajustes Footer*/
+}
+/*Fim Dimensionamento em Tablet*/
